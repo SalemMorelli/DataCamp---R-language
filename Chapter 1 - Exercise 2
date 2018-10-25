@@ -1,0 +1,14 @@
+> # Print the class of 'data_maruti'
+> typeof(data_maruti)
+[1] "list"
+> 
+> # Print the type of 'data_maruti'
+> class(data_maruti)
+[1] "data.frame"
+> 
+> # Print the dimensions of 'data_maruti'
+> 
+> dim(data_maruti)
+[1] 1559    6
+
+

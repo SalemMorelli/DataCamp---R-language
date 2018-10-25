@@ -1,0 +1,12 @@
+> data_maruti[5, 100]
+NULL
+> data_maruti[100, 5]
+[1] 819.9
+> data_maruti$Close[101]
+[1] 812.2
+> Close$data_maruti[100]
+Error: object 'Close' not found
+
+Also, this would work:-
+
+data_maruti$Close[100]  = means columb "Close" row 100.

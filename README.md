@@ -90,6 +90,19 @@ With this new knowledge, determine which the following statements is true about
 e <- a - c(0, a[1:9]).
 
 ## Exercise 9
+### Calculate returns: Get started
+In the following few exercises, you will learn to find returns on the closing prices of the stock. This task is broken down in smaller and easier steps which are listed below.
+
+Step 1: Create a new column called diffClose. It will store the difference between every pair of consecutive closing prices.
+Step 2: Extract the closing prices of first two rows in data_maruti.
+Step 3: Update diffClose so that it contains the difference between closing price of that row and closing price of the previous row.
+Step 4: Create a new column called sreturns which will store the values of returns.
+Step 5: Calculate returns for the entire data and save in the column sreturns.
+The formula for calculating simple returns (SR) is the following:
+
+$$ SRt = \frac{(P{t+1} - Pt)}{Pt},$$
+
+where Pt denotes the price at time t. In this exercise you will cover steps 1 and 2. data_maruti is already available in the workspace. The column name of the closing prices is Close.
 ## Exercise 10
 ## Exercise 11
 ## Exercise 12

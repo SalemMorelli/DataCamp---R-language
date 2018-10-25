@@ -1,5 +1,4 @@
-# DataCamp---R-language
-Exercises and notes from DataCamp on the R language for financial modelling.
+Exercises and notes from DataCamp on the R language for data modelling.
 
 # Chapter 1
 ## Exercise 2

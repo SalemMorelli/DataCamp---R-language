@@ -34,3 +34,13 @@ data_maruti$Date[1:10]
 Run the code in the console and check the results!
 
 Which of the following codes will extract the closing prices in rows 100 to 110? The data_maruti data frame is already available in the workspace. The name of column of closing prices is Close.
+
+## Exercise 5
+### Function c()
+The function c() is one of the most useful functions in R. It is used to create a new vector that can be saved as a new column in a data frame.
+
+We can use the c() function in different ways. Check out the syntaxes below for creating a vector with values 1, 2, 3, 4 and 5:
+
+Give all the values as arguments: c(1, 2, 3, 4, 5).
+To create a vector of consecutive integers, use the colon operator: c(1:5).
+In this exercise, you will learn to create vectors and run basic arithmetic operations on them.

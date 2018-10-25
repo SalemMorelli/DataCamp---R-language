@@ -67,3 +67,9 @@ The data frame data_maruti is already loaded in the workspace, so you can start 
 ## Exercise 11
 ## Exercise 12
 ## Exercise 13
+## Exercise 14
+## Exercise 15
+## Exercise 16
+## Exercise 17
+## Exercise 18
+## Exercise 19

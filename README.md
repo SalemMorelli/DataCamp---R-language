@@ -62,6 +62,32 @@ With these special cases in mind, let us start creating new columns! As an examp
 The data frame data_maruti is already loaded in the workspace, so you can start without having to call the read.csv() function.
 
 ## Exercise 8
+### Vector Operations
+Vector operations in a data frame allow row-wise operation across columns. So if you want to add rows in two columns, col1 and col2, simply doing a col1+col2 will give you a new vector with the same number of elements as the input columns had, and containing the row-wise sum of these input elements. It is essential that the length of input variables is the same in this respect.
+
+You can try a few vector operations on the console to the right. The following vectors are available in the workspace:
+
+a <- c(1:10)
+b <- rep(1,10)   # a vector of length 10 containing 1s.
+c <- 2   # this is also a vector!
+d <- c(0,5)
+You can try the following combinations to see how vector operations work:
+
+a+b
+a-b
+b/a
+a*c
+b-c
+However, you can try anything else you fancy. You can, for example, try to combine different operations. Practicing in R is the best way to understand how functions work!
+
+Another very important concept here is recycling. Whenever you want to do vector operations on vectors of different lengths, the values of the shortest vector get recycled. For example, if you want calculate the difference of c and d, as c-d, the result is the vector c(2, -3). Because the vector c contained only one value, while the vector d contained two, the value of c got recycled. In essence, the substraction c(2,2) - c(0,5) happened, with R dealing with the recycling for you.
+
+Similarly, b + d will result in the recycling of the vector d, since it contains only 2 elements while b contains ten. Try it out in the console and be amazed!
+
+With this new knowledge, determine which the following statements is true about
+
+e <- a - c(0, a[1:9]).
+
 ## Exercise 9
 ## Exercise 10
 ## Exercise 11

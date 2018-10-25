@@ -4,7 +4,9 @@
 > 
 > # Print the type of 'data_maruti'
 > class(data_maruti)
-[1] "data.frame"
+[1] "data.frame"   
+--------- The output here could either be a dataframe or vector. A dataframe is made up of vectors. So this dataset (i.e data maruti) 
+--------- is a dataframe. 
 > 
 > # Print the dimensions of 'data_maruti'
 > 

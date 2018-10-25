@@ -9,4 +9,4 @@ Error: object 'Close' not found
 
 Also, this would work:-
 
-data_maruti$Close[100]  = means columb "Close" row 100.
+data_maruti$Close[100]  = means column "Close" row 100.

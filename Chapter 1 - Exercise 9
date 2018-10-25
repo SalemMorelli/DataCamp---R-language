@@ -1,0 +1,32 @@
+## Tips
+Print the first few rows of data_maruti to the console to check the order of the date using the head() function. Assert that the data is ordered from oldest to newest date.
+Initialize a new column called diffClose in data_maruti by assigning zero to it. Remember from the previous exercise that this value will be recycled, so all rows in the diffClose column will be zero.
+Extract the values of closing prices for the first two rows and save them as Close1 and Close2.
+
+
+> # Print the first few rows of 'data_maruti'
+> head(data_maruti)
+        Date Open    High    Low  Close Volume diffClose
+1 01-01-2008 1000 1000.00 986.00 991.00 183100         0
+2 02-01-2008 1005 1009.95 978.60 993.10 351300         0
+3 03-01-2008  999  999.00 969.95 972.65 455600         0
+4 04-01-2008  975  982.50 959.00 964.00 798900         0
+5 07-01-2008  952  970.00 952.00 964.00 683100         0
+6 08-01-2008  965  970.00 936.00 938.00 644300         0
+> 
+> # Initialize a new column 'diffClose' as '0'
+> data_maruti$diffClose <- c(0)
+> 
+> # Save the value of closing price in first row of 'data_maruti' in variable 'Close1'
+> Close1 <- data_maruti$Close[1]
+> 
+> # Define a new variable Close2 and save the value of closing price in second row of 'data_maruti' in variable 'Close2'
+> Close2 <- data_maruti$Close[2]
+> 
+> # Print the new variable 'Close1'
+> print(Close1)
+[1] 991
+> 
+> # Print the new variable 'Close2'
+> print(Close2)
+[1] 993.1

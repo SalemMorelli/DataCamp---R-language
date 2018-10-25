@@ -1,19 +1,36 @@
-> # Code for the 'lastOpen' column
-> # specify 'n' as the number of rows
-> n = nrow(data_maruti)
-> 
-> # Add column 'lastOpen': the first value is zero!
-> data_maruti$lastOpen <- c(0, data_maruti$Open[1:n-1])
-> 
-> # Your turn: add the column 'lastClose'
-> data_maruti$lastClose <- c(0, data_maruti$Close[1:n-1])
-> 
-> # Print the data frame and inspect the values in the new columns
-> head(data_maruti)
-        Date Open    High    Low  Close Volume lastOpen lastClose
-1 01-01-2008 1000 1000.00 986.00 991.00 183100        0      0.00
-2 02-01-2008 1005 1009.95 978.60 993.10 351300     1000    991.00
-3 03-01-2008  999  999.00 969.95 972.65 455600     1005    993.10
-4 04-01-2008  975  982.50 959.00 964.00 798900      999    972.65
-5 07-01-2008  952  970.00 952.00 964.00 683100      975    964.00
-6 08-01-2008  965  970.00 936.00 938.00 644300      952    964.00
+> a <- c(1:10)
++ b <- rep(1,10)   # a vector of length 10 containing 1s.
++ c <- 2   # this is also a vector!
++ d <- c(0,5)
+> a+b
++ a-b
++ b/a
++ a*c
++ b-c
+ [1]  2  3  4  5  6  7  8  9 10 11
+ [1] 0 1 2 3 4 5 6 7 8 9
+ [1] 1.0000000 0.5000000 0.3333333 0.2500000 0.2000000 0.1666667 0.1428571
+ [8] 0.1250000 0.1111111 0.1000000
+ [1]  2  4  6  8 10 12 14 16 18 20
+ [1] -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+> c-d
+[1]  2 -3
+> b+d
+ [1] 1 6 1 6 1 6 1 6 1 6
+
+
+### Question from notes:-
+
+With this new knowledge, determine which the following statements is true about
+
+e <- a - c(0, a[1:9]).
+
+1. The first element of e equals 0.
+2. All the elements of e are equal to 1.
+3. e is a vector with only one element.
+4. This code will not run as it is syntactically incorrect.
+
+Ans is 2:-
+Great! You can see that c(0, a[1:9]) creates a new vector c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9); that is, 
+the new vector has 0 and the first nine elements from the vector a. When you subract this new vector from original vector a, 
+then you are essentially subracting 10 consecutive whole numbers. Hence, the e would consist of 10 values, each equal to 1.

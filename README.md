@@ -1,6 +1,7 @@
 Exercises and notes from DataCamp on the R language for data modelling.
 
-# Chapter 1
+# Chapter 1 - Introduction to R for trading
+Get familiar with the new cool language of the financial analysts: R! This chapter is to equip you with the basic programming skills in R before we proceed to strategy writing. You will learn many techniques in an interactive fashion, requiring you to write your own one-two lines of codes in every exercise. This chapter covers reading a data.table, creating new columns in the table, calculating returns by different methods, loop-functions, conditional functions and plotting of the dataset.
 ## Exercise 3
 ### Types, Classes and Dimensions of Objects in R
 Every variable in R is an object which has its own type, class and dimension. There are only few basic types of variables such as numeric (e.g. 5 or 5.0), character (e.g. "a") and logical (e.g TRUE). The dimensions are the number of rows and columns of the object. Finally, the class of an object can alter the behavior of the same functions. For example, the print() function will behave differently for a variable that is a data frame as compared to a variable that is a linear model.
@@ -88,6 +89,35 @@ With this new knowledge, determine which the following statements is true about
 
 e <- a - c(0, a[1:9]).
 
+## Exercise 9
+## Exercise 10
+## Exercise 11
+## Exercise 12
+## Exercise 13
+## Exercise 14
+## Exercise 15
+## Exercise 16
+## Exercise 17
+## Exercise 18
+## Exercise 19
+
+# Chapter 2 - Code a basic trading strategy
+In this chapter, we will work with a sample dataset, which has price of a stock and its best buying and best selling price in the market at any time 't'. You will learn to write a simple strategy based on price movements of the stock. Learn to generate trading signals; how to decide upon the trading quantity and trading price to place orders. Finally, learn to analyse your strategy based on the accrued profit and loss. Use R as a statistical tool to write your first fully functional programming code which performs these tasks automatically and gives you the final output.
+## Exercise 9
+## Exercise 10
+## Exercise 11
+## Exercise 12
+## Exercise 13
+## Exercise 14
+## Exercise 15
+## Exercise 16
+## Exercise 17
+## Exercise 18
+## Exercise 19
+
+
+# Chapter 3 - Create a technical indicator
+Apply the knowledge of previous chapters to write a more sophisticated trading strategy based on Point & Figures. Create a technical indicator in your strategy to improve your output. You will learn to improve your strategy's returns by changing the input parameters. Hence, you take your first step towards optimizing a trading strategy. After this chapter you would appreciate the complexities involved in creating quantitative trading strategies and would be equipped with knowledge and skills required to write your own trading strategies in R!
 ## Exercise 9
 ## Exercise 10
 ## Exercise 11

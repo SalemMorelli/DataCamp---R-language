@@ -1,0 +1,22 @@
+# Create a vector 'serialnum' which creates serial numbers from 1 to 5.
+serialnum <-c(1:5)
+
+# Create a vector 'math' with the scores for Mathematics.
+math <- c(35, 65, 40, 75, 80)
+
+# Create a vector 'eng' with the scores for English.
+eng <-c(80, 55, 70, 65, 70)
+
+# Create a vector 'total' which sums the scores in Mathematics and English tests for the five students.
+# This one is done for you!
+total <- math + eng
+
+# Create a vector 'avg' which contains the average scores of Mathematics and English tests for the five students
+avg <- total/2
+
+# To inspect the vectors, we simply print them to the console
+print(serialnum)
+print(math)
+print(eng)
+print(total)
+print(avg)

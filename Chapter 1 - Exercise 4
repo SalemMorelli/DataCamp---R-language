@@ -1,0 +1,12 @@
+> data_maruti$Date[1:10]
+ [1] "01-01-2008" "02-01-2008" "03-01-2008" "04-01-2008" "07-01-2008"
+ [6] "08-01-2008" "09-01-2008" "10-01-2008" "11-01-2008" "14-01-2008"
+> Close[100:110]
+Error: object 'Close' not found
+> data_maruti$Close[100:110]
+ [1] 819.90 812.20 807.20 802.20 794.00 760.00 767.00 785.40 765.00 764.75
+[11] 783.05
+> data_maruti$close[100:110]
+NULL
+> data_maruti$Close[100,110]
+Error: incorrect number of dimensions

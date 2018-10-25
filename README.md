@@ -26,3 +26,12 @@ df_name$colname[x] refers to row x of column colname in data frame df_name.
 Which of the following lines will give you the correct value of the closing price in the 100th row of data_maruti? The data_maruti data frame is already available in the workspace. The name of the column containing closing prices is Close.
 
 ## Exercise 4
+### Extract value of consecutive cells in a column
+So far, you have learned to extract the value of a single row in a column. Now you will learn to extract data in a sequence of rows for the given column.
+
+We use the colon operator, :, in R to specify the first and last number of the sequence. For example, to extract the first ten values in the column Date in data_maruti, simply run this code:
+
+data_maruti$Date[1:10]
+Run the code in the console and check the results!
+
+Which of the following codes will extract the closing prices in rows 100 to 110? The data_maruti data frame is already available in the workspace. The name of column of closing prices is Close.

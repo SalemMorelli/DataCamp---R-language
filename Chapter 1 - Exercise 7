@@ -1,1 +1,36 @@
+> a <- c(1:10)
++ b <- rep(1,10)   # a vector of length 10 containing 1s.
++ c <- 2   # this is also a vector!
++ d <- c(0,5)
+> a+b
++ a-b
++ b/a
++ a*c
++ b-c
+ [1]  2  3  4  5  6  7  8  9 10 11
+ [1] 0 1 2 3 4 5 6 7 8 9
+ [1] 1.0000000 0.5000000 0.3333333 0.2500000 0.2000000 0.1666667 0.1428571
+ [8] 0.1250000 0.1111111 0.1000000
+ [1]  2  4  6  8 10 12 14 16 18 20
+ [1] -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+> c-d
+[1]  2 -3
+> b+d
+ [1] 1 6 1 6 1 6 1 6 1 6
 
+
+### Question from notes:-
+
+With this new knowledge, determine which the following statements is true about
+
+e <- a - c(0, a[1:9]).
+
+1. The first element of e equals 0.
+2. All the elements of e are equal to 1.
+3. e is a vector with only one element.
+4. This code will not run as it is syntactically incorrect.
+
+Ans is 2:-
+Great! You can see that c(0, a[1:9]) creates a new vector c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9); that is, 
+the new vector has 0 and the first nine elements from the vector a. When you subract this new vector from original vector a, 
+then you are essentially subracting 10 consecutive whole numbers. Hence, the e would consist of 10 values, each equal to 1.

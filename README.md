@@ -104,6 +104,21 @@ $$ SRt = \frac{(P{t+1} - Pt)}{Pt},$$
 
 where Pt denotes the price at time t. In this exercise you will cover steps 1 and 2. data_maruti is already available in the workspace. The column name of the closing prices is Close.
 ## Exercise 10
+### Using the diff() function
+Previously, you coded the lastOpen and lastClose columns using a 'lagged' version of the Open and Close columns respectively. It was a very smart way of solving this, but it was not particularly readable. R has provided a way to use this 'lagged' column straight away: the diff() function.
+
+In the exercise you completed earlier, data_maruti contained a column Open. Then you created the column lastOpen, a lagged version of Open. If you now want the difference between Open and lastOpen, you could do
+
+difference <- data_maruti$Open - c(0, data_maruti$Open[1:nrow(data_maruti)-1])
+All this R wizardry can be performed by diff() automatically. You can even specify the lag to impose on the column:
+
+difference <- diff(data_maruti$Open, lag = 1)
+If you execute both commands above, you will see a slight difference because R returns only nrow(data_maruti)-1 values: the differences for rows that needed data that is not available, is not returned, where as our own custom solution told R that the unknown value was 0. For more information and examples on the diff() function, you can consult the RDocumentation on diff().
+
+With this new theory in mind, what will be the result of the following code?
+
+v  = c(0, 1, 2, 3, 4, 0, 1, 2)
+diff(v, lag = 2)
 ## Exercise 11
 ## Exercise 12
 ## Exercise 13

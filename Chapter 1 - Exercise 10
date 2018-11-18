@@ -1,0 +1,11 @@
+With this new theory in mind, what will be the result of the following code?
+
+v  = c(0, 1, 2, 3, 4, 0, 1, 2)
+diff(v, lag = 2)
+
+Ans:-
+
+c(2, 2, 2, -3, -3, 2)
+
+We can see that lag=2 shifts v two places and then calculates the difference. 
+If lag = 1 then diff() will give the difference between consecutive numbers!

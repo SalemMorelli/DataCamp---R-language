@@ -1,0 +1,14 @@
+What will be the output of this line of code?
+
+c(0, diff(data_maruti$Close,lag=1))
+data_maruti data frame is already available in the workspace. Name of column of closing prices is Close.
+
+
+
+Ans:-
+
+-a vector with its first value equal to zero and differences of consecutive closing prices
+
+With a single line, we have created a vector with the differences between every pair closing prices.
+For the first row it is not possible to create a pair and find its difference. 
+That is why, the first value for the vector has been assigned zero.

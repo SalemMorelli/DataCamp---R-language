@@ -135,6 +135,23 @@ c(0, diff(data_maruti$Close,lag=1))
 data_maruti data frame is already available in the workspace. Name of column of closing prices is Close.
 
 ## Exercise 12
+### Calculate returns: For the second row
+We will continue working on the steps for calculating the returns. We have already completed steps 1 & 2:
+
+Step 1: Create a new column called diffClose. It will store the difference between every pair of consecutive closing prices.
+Step 2: Extract the closing prices of first two rows in data_maruti.
+In this next two exercises, you will finish on the following steps:
+
+Step 3: Update diffClose so that it contains the difference between closing price of that row and closing price of the previous row.
+Step 4: Create a new column called sreturns which will store the values of returns.
+Step 5: Calculate returns for the entire data and save in the column sreturns. You will first do this for a single row, and then generalize these calculations in the next exerise.
+Reconsider the formula for calculating simple returns:
+
+$$ SR_t = \frac{(P_{t+1} - P_t)}{P_t} $$
+
+Remember that $SRt$ was the simple return at time \(t\) and $Pt$ is the closing price at time \(t\).
+
+data_maruti is already loaded in the workplace. diffClose, Close1 are already initialized exactly as you have coded it earlier. This means you can start right away!
 ## Exercise 13
 ## Exercise 14
 ## Exercise 15

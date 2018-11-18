@@ -119,7 +119,21 @@ With this new theory in mind, what will be the result of the following code?
 
 v  = c(0, 1, 2, 3, 4, 0, 1, 2)
 diff(v, lag = 2)
+
 ## Exercise 11
+### Calculate returns: Using c() and diff() together
+Evidently, R functions can be nested, such that the output of the function that is evaluated first serves as the input to the next function. For example, if we have a data frame df_names and want to execute two functions on it - first func1, then func2 - the syntax would be:
+
+funct2(funct1(df_name))
+The output of funct1(df_name) is the argument for funct2().
+
+In financial computing, we might need to use c() and diff() together. In order to create a new column which comprises differences between values of another column, you can pass the function diff() as an argument for the function c(). The c() function is useful here since diff() returns a vector that is slightly shorter than the original vector; using c() to add some default values will make sure your vector has a size that the data frame you want to add it to expects.
+
+What will be the output of this line of code?
+
+c(0, diff(data_maruti$Close,lag=1))
+data_maruti data frame is already available in the workspace. Name of column of closing prices is Close.
+
 ## Exercise 12
 ## Exercise 13
 ## Exercise 14
